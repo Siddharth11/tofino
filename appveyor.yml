@@ -33,6 +33,7 @@ build: off
 
 test_script:
   - npm run test-ci
+  - npm dedupe
   - npm run package
 
 before_deploy:
