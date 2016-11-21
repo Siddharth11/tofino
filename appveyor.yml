@@ -27,13 +27,14 @@ install:
   - npm prune
   - npm install --progress false --depth 0
   - npm install --progress false --depth 0
+  - cd app
   - npm dedupe
+  - cd ..
 
 build: off
 
 test_script:
   - npm run test-ci
-  - npm dedupe
   - npm run package
 
 before_deploy:

@@ -27,7 +27,7 @@
     "report": "nyc report",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "install": "node build/main.js --build-deps",
-    "postinstall": "cd app && npm install && npm dedupe && cd .."
+    "postinstall": "cd app && npm install && cd .."
   },
   "license": "Apache-2.0",
   "dependencies": {
